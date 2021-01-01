@@ -1,0 +1,59 @@
+.newArrival {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.productButton {
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #FE980F;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 10px 5px;
+    outline: none !important;
+}
+
+.active {
+    text-decoration: none;
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+    box-shadow: none;
+}
+
+.productButton:hover {
+    text-decoration: none;
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+    box-shadow: none;
+}
+
+.sizeRequire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 5px;
+    border: 2px solid #FE980F;
+}
+
+.text {
+    color: #FE980F;
+    font-size: 2rem;
+}
+

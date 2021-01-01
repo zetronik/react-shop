@@ -1,0 +1,13 @@
+.pagination li {
+    display: block;
+    background: #FE980F;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.pagination li.active {
+    background: #F5F5ED;
+    color: #696763;
+}

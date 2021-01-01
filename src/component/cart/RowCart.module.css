@@ -1,0 +1,32 @@
+.cartProduct img {
+    width: 100px;
+}
+
+.cartDelete {
+    text-align: center;
+}
+
+.cartDelete span {
+    background: #F0F0E9;
+    color: #FFFFFF;
+    padding: 5px 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cartDelete span:hover {
+    background: #FE980F;
+}
+
+.cartRow h4 a {
+    color: #363432;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.cartRow p {
+    color: #696763;
+    font-size: 18px;
+}

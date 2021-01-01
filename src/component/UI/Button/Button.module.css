@@ -1,0 +1,33 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #FE980F;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0 5px;
+    outline: none;
+}
+
+.btn:hover, btn:active, btn:focus {
+    text-decoration: none;
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+
+    box-shadow: none;
+}

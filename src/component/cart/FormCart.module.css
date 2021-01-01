@@ -1,0 +1,11 @@
+.formSubmit {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup {
+    margin: 5px 0;
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}

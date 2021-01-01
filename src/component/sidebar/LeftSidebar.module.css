@@ -1,0 +1,75 @@
+.categoryProducts {
+    border: 2px solid #F7F7F5;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.panelHeading {
+    background-color: #FFFFFF;
+    border: 0 none;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #F7F7F0;
+}
+
+.panelTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.panelTitle:hover {
+    color: #FE980F;
+}
+
+.clearButton {
+    width: 100%;
+    padding: 6px 12px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #FE980F;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    outline: none !important;
+}
+
+.clearButton:hover {
+    text-decoration: none;
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+    box-shadow: none;
+}
+
+.clearButton:active {
+    text-decoration: none;
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+    box-shadow: none;
+}
+
+clearButton:focus {
+    text-decoration: none;
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+    box-shadow: none;
+}

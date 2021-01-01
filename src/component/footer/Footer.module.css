@@ -1,0 +1,44 @@
+.Footer {
+    background-image: radial-gradient(circle at -24% 48%, hsl(33.7,94.38%,48.82%) 57%, hsl(45.62,100%,52.55%) 75%);
+}
+.footerNavbar {
+    margin: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.link {
+    color: #696763;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 0 0 10px 0;
+    text-decoration: none;
+    margin: 10px 0 0 15px;
+}
+
+.link .active {
+    background: none;
+    color: #220ce0;
+}
+.link:hover {
+    color: #220ce0;
+    text-decoration: none;
+}
+
+.pull {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pull p {
+    margin: 10px 0;
+    font-size: .7rem;
+}
