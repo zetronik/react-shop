@@ -1,6 +1,6 @@
 import React from 'react'
 import { store } from 'react-notifications-component'
-import Loader from '../../component/UI/Loader/Loade'
+import Loader from '../../component/UI/Loader/Loader'
 import {Col, Container, Row} from "react-bootstrap"
 import {connect} from 'react-redux'
 import {addToCart} from "../../store/actions/cart"

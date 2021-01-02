@@ -1,4 +1,4 @@
-import {INIT_SHOP, FIND_PRODUCT, SET_SIZE, SIZE_REQUIRE, SET_QT} from "../actions/actionTypes";
+import {INIT_SHOP, FIND_PRODUCT, SET_SIZE, SIZE_REQUIRE, SET_QT, CLEAR_HANDLER, ITEM_UPDATE} from "../actions/actionTypes";
 
 const initialState = {
     loading: false,
@@ -9,6 +9,9 @@ const initialState = {
     sizeRequire: true,
     qt: 1,
     category: [],
+    page: 1,
+    totalPages: 1,
+    length: 6,
     contact: {},
     emailConfig: {}
 }
@@ -25,6 +28,10 @@ export default function shopReducer(state = initialState, action) {
             return {...state, sizeRequire: false}
         case SET_QT:
             return {...state, qt: action.qt}
+        case ITEM_UPDATE:
+            return {...state, ...action.data}
+        case CLEAR_HANDLER:
+            return {...state, ...action.data}
         default:
             return state
     }

@@ -1,16 +1,32 @@
 import axios from 'axios'
 import {firebaseLink} from '../../config/configShop'
-import {INIT_SHOP, FIND_PRODUCT, SET_SIZE, SIZE_REQUIRE, SET_QT} from './actionTypes'
+import {INIT_SHOP, FIND_PRODUCT, SET_SIZE, SIZE_REQUIRE, SET_QT, CLEAR_HANDLER, ITEM_UPDATE} from './actionTypes'
 
 export function initShop() {
     return async dispatch => {
         try {
             const res = await axios.get(firebaseLink)
+            console.log(res.data)
+            dispatch(itemUpdate(res.data.shop, 1, 6))
+            dispatch(clearHandler(res.data.shop, 1, 6))
             dispatch(setConfig(res.data))
         } catch (e) {
-            
+            console.log(e)
         }
     } 
+}
+
+export function itemUpdate(shop, page, length) {
+    const totalPages = Math.ceil(shop.length/length)
+    const item = shop.slice((page - 1) * length, length * (page))
+    console.log(item)
+    return {type: ITEM_UPDATE, data: {item, totalPages}}
+}
+
+export function clearHandler(shop, page, length) {
+    const totalPages = Math.ceil(shop.length/length) || 1
+    const item = shop.slice((page - 1) * length, length * (page))
+    return {type: CLEAR_HANDLER, data: {totalPages, item, shop}}
 }
 
 export function findItem(id) {

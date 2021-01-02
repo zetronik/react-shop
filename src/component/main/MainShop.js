@@ -4,6 +4,7 @@ import ShopItem from '../shopitem/ShopItem'
 import Pagination from '../UI/Pagination/Pagination'
 import {Col, Container, Row} from "react-bootstrap";
 import './MainShop.css'
+import Loader from "../UI/Loader/Loader";
 
 class MainShop extends React.Component {
     constructor(props) {
@@ -63,7 +64,11 @@ class MainShop extends React.Component {
                                 <Col sm="12" className="features_items">
                                     <h2 className="title text-center">Товары</h2>
                                 </Col>
-                                <ShopItem shop={this.state.item} />
+                                {
+                                    !!this.props.item
+                                    ? <ShopItem shop={this.props.item} />
+                                    : <Loader />
+                                }
                                 <Col sm="12">
                                     <Pagination
                                         currentPage={this.state.page}
