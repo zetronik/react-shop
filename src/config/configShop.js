@@ -6,6 +6,7 @@ export const nav = {
         {to: '/shop', value: 'Товары', exact: false},
         {to: '/care', value: 'Уход за одеждой', exact: false},
         {to: '/size', value: 'Подобрать размер', exact: false},
+        {to: '/delivery', value: 'Доставка и оплата', exact: false},
         {to: '/about', value: 'О нас', exact: false}
     ],
     footer: [
@@ -13,6 +14,7 @@ export const nav = {
         {to: '/shop', value: 'Товары', exact: false},
         {to: '/care', value: 'Уход за одеждой', exact: false},
         {to: '/size', value: 'Подобрать размер', exact: false},
+        {to: '/delivery', value: 'Доставка и оплата', exact: false},
         {to: '/order', value: 'Мои заказы', exact: false},
         {to: '/cart', value: 'Корзина', exact: false},
         {to: '/about', value: 'О нас', exact: false},

@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 import Input from '../UI/Input/Input'
 import classes from './ProductInformation.module.css'
 import {Container, Row, Col} from "react-bootstrap";
@@ -53,11 +54,9 @@ export default function ProductInformation(props) {
 
                     <Col sm="12" className="mt-3">
                         <p>
-                            <b>Доступность:</b>
+                            <b>Наличие:</b>
                             {props.item.availability ? ' Есть в наличие' : ' Нету в наличие'}
                         </p>
-                        <p><b>Состояние:</b> {props.item.condition}</p>
-                        <p><b>Бренд:</b> {props.item.brand}</p>
                     </Col>
 
                     <Col sm="12" className="mt-3">
@@ -68,6 +67,26 @@ export default function ProductInformation(props) {
                         >
                             В корзину
                         </button>
+                    </Col>
+                    <Col sm="12" className="mt-3 mb-3">
+                        <NavLink
+                            className={classes.productButton}
+                            to="/care"
+                        >
+                            Уход за одеждой
+                        </NavLink>
+                        <NavLink
+                            className={classes.productButton}
+                            to="/size"
+                        >
+                            Подобрать размер
+                        </NavLink>
+                        <NavLink
+                            className={classes.productButton}
+                            to="/delivery"
+                        >
+                            Доставка и оплата
+                        </NavLink>
                     </Col>
                 </Row>
             </Container>

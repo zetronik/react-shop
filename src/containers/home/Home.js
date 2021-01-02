@@ -16,7 +16,7 @@ class Header extends React.Component {
     render() {
         return (
             <div  className={classes.Header}>
-                <Slider />
+                <Slider slider={this.props.slider} />
                 <MainHome shopHome={this.homeItemFilter()}/>
             </div>
         )
@@ -25,7 +25,8 @@ class Header extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        shop: state.shop.shop
+        shop: state.shop.shop,
+        slider: state.shop.slider
     }
 }
 function mapDispatchToProps(dispatch) {

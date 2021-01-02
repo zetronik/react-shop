@@ -4,6 +4,7 @@ const initialState = {
     loading: false,
     shop: [],
     item: {},
+    slider: [],
     size: null,
     sizeRequire: true,
     qt: 1,

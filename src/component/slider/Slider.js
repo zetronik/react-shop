@@ -5,12 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Slider.css'
 import {Col, Container, Row, Image, Button} from "react-bootstrap";
 
-export default function Slider() {
-    const slider = [
-        {image: 'images/home/girl1.jpg'},
-        {image: 'images/home/girl2.jpg'},
-        {image: 'images/home/girl3.jpg'},
-    ]
+export default function Slider(props) {
     const getConfigurableProps = () => ({
         showArrows: true,
         showStatus: false,
@@ -29,16 +24,15 @@ export default function Slider() {
         swipeScrollTolerance: 5,
     });
     const slideRender = () => {
-        return slider.map((item, index) => {
+        return props.slider.map((item, index) => {
             return (
                 <Container key={index}>
                     <Row>
                         <Col sm={6} className="slider-content">
-                            <h1><span>E</span>-SHOPPER</h1>
-                            <h2>Free E-Commerce Template</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <Button type="button" className="btn btn-default get">Get it now</Button>
+                            <h1>{item.title}</h1>
+                            <h2>{item.shortDescription}</h2>
+                            <p>{item.description}</p>
+                            <Button type="button" className="btn btn-default get">Посмотреть</Button>
                         </Col>
                         <Col sm={6}>
                             <LazyLoad height={100}>

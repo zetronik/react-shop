@@ -16,7 +16,7 @@ export default function Middle(props) {
                             <Nav.Item>
                                 <NavLink to="/">
                                     <LazyLoad>
-                                        <img src="../images/logo/logo.jpg" alt=""/>
+                                        <img className={classes.logo} src="../images/logo/logo.jpg" alt=""/>
                                     </LazyLoad>
                                 </NavLink>
                             </Nav.Item>

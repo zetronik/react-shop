@@ -13,6 +13,7 @@ const Order  = lazy(() => import('./containers/order/Order'))
 const About  = lazy(() => import('./containers/about/About'))
 const Size  = lazy(() => import('./containers/size/Size'))
 const Care  = lazy(() => import('./containers/care/Care'))
+const Delivery  = lazy(() => import('./containers/delivery/Delivery'))
 
 class App extends React.Component {
     componentDidMount() {
@@ -31,6 +32,7 @@ class App extends React.Component {
                         <Route path="/about" exact={true} component={About} />
                         <Route path="/size" exact={true} component={Size} />
                         <Route path="/care" exact={true} component={Care} />
+                        <Route path="/delivery" exact={true} component={Delivery} />
                     </Switch>
                 </Suspense>
             </Layout>
