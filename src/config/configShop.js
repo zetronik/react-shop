@@ -1,4 +1,4 @@
-export const firebaseLink = 'https://chillyfashionshop-default-rtdb.europe-west1.firebasedatabase.app/shopConfig.json'
+export const firebaseLink = 'https://chilly-shop-default-rtdb.europe-west1.firebasedatabase.app/shopConfig.json'
 
 export const nav = {
     header:  [

@@ -9,7 +9,7 @@ export default function Input(props) {
                 type="button"
                 data-sign="minus"
                 data-row={props.row}
-                onClick={event => props.onClick(event, props.input)}
+                onClick={event => props.onClick(event.target.dataset.sign, props.input)}
             >
                 -
             </button>
@@ -19,7 +19,7 @@ export default function Input(props) {
                 type="button"
                 data-sign="plus"
                 data-row={props.row}
-                onClick={event => props.onClick(event, props.input)}
+                onClick={event => props.onClick(event.target.dataset.sign, props.input)}
             >
                 +
             </button>

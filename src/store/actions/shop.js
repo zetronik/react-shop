@@ -42,7 +42,6 @@ export function setSizeRequire() {
 }
 
 export function setQt(data, qt) {
-    console.log(qt)
     if (data === 'minus') {
         const q = qt - 1
         if (q > 0) {
