@@ -2,7 +2,7 @@ import React from 'react'
 import LazyLoad from 'react-lazyload'
 import {Container, Row, Col, Nav, Badge} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faShoppingCart, faUser} from "@fortawesome/free-solid-svg-icons";
+import {faShoppingCart, faUser} from '@fortawesome/free-solid-svg-icons'
 import {NavLink} from 'react-router-dom'
 import classes from './Middle.module.css'
 

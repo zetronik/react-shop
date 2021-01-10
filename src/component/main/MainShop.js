@@ -13,7 +13,8 @@ class MainShop extends React.Component {
             page: 1,
             totalPages: 1,
             length: 6,
-            item: []
+            item: [],
+            sidebar: true
         }
     }
     itemUpdate = (page ) => {
@@ -23,6 +24,9 @@ class MainShop extends React.Component {
         this.setState({item, totalPages})
     }
     componentDidMount() {
+        if (window.innerWidth < 576) {
+            this.sidebarCollapseHandler()
+        }
         this.clearHandler()
     }
     categoryHandler = event => {
@@ -44,6 +48,11 @@ class MainShop extends React.Component {
         this.setState({page})
         this.itemUpdate(+page)
     }
+    sidebarCollapseHandler = () => {
+        const sidebar = this.state.sidebar
+        this.setState({sidebar: !sidebar})
+    }
+
     render() {
         return (
             <Container>
@@ -54,6 +63,8 @@ class MainShop extends React.Component {
                             shop={this.props.shop}
                             categoryHandler={this.categoryHandler}
                             clearHandler={this.clearHandler}
+                            sidebar={this.state.sidebar}
+                            clickSidebar={this.sidebarCollapseHandler}
                         />
                     </Col>
                     <Col sm="9">

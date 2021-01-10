@@ -73,3 +73,20 @@ clearButton:focus {
     border-color: #adadad;
     box-shadow: none;
 }
+
+.categoryButton, .categoryButton:hover, .categoryButton:active {
+    color: #FE980F !important;
+    background-color: #FFFFFF !important;
+    border-color: #FE980F !important;
+    box-shadow: none;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.categoryButton span {
+    color: #FE980F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

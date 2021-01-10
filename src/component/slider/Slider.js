@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel'
 import LazyLoad from 'react-lazyload'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Slider.css'
-import {Col, Container, Row, Image, Button} from "react-bootstrap";
+import {Col, Container, Row, Image} from "react-bootstrap";
 
 export default function Slider(props) {
     const getConfigurableProps = () => ({
@@ -32,11 +32,10 @@ export default function Slider(props) {
                             <h1>{item.title}</h1>
                             <h2>{item.shortDescription}</h2>
                             <p>{item.description}</p>
-                            <Button type="button" className="btn btn-default get">Посмотреть</Button>
                         </Col>
                         <Col sm={6}>
                             <LazyLoad height={100}>
-                                <Image src={item.image} fluid={true} alt=""/>
+                                <Image className="slider-image" src={item.image} fluid={true} alt=""/>
                             </LazyLoad>
                         </Col>
                     </Row>

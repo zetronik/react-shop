@@ -5,3 +5,8 @@
 .slider-content {
     text-align: left;
 }
+
+.slider-image {
+    width: auto !important;
+    height: 300px;
+}

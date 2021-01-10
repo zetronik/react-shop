@@ -3,11 +3,11 @@ import { store } from 'react-notifications-component'
 import Loader from '../../component/UI/Loader/Loade'
 import {Col, Container, Row} from "react-bootstrap"
 import {connect} from 'react-redux'
-import {addToCart} from "../../store/actions/cart"
+import {addToCart} from '../../store/actions/cart'
 import {findItem, setQt, setSize, setSizeRequire} from '../../store/actions/shop'
 import classes from './Product.module.css'
-const ProductPhoto = React.lazy(() => import('../../component/product/ProductPhoto'))
 const ProductInformation = React.lazy(() => import('../../component/product/ProductInformation'))
+const EmblaCarousel = React.lazy(() => import('../../component/product/slider/EmblaCarousel'))
 
 class Product extends React.Component {
     constructor(props) {
@@ -64,10 +64,10 @@ class Product extends React.Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col className="col-sm-6">
-                        <ProductPhoto image={this.props.item.image} />
+                    <Col xs={12} sm={12} md={6}>
+                        <EmblaCarousel slides={this.props.item.image}/>
                     </Col>
-                    <Col className="col-sm-6">
+                    <Col xs={12} sm={12} md={6}>
                         <ProductInformation
                             item={this.props.item}
                             size={this.props.setSize}

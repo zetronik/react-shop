@@ -1,0 +1,26 @@
+.logo {
+    width: auto;
+    height: 300px;
+}
+
+.wrapLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapAbout p {
+    text-align: justify;
+}
+
+.wrapContact {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.wrapContact a {
+    display: block;
+    color: #FE980F;
+    text-decoration: none;
+    font-size: 1rem;
+}
